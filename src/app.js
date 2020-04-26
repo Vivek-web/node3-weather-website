@@ -27,7 +27,7 @@ app.get('', (req, res) => {
 })
 
 app.get('/weather',(req,res)=>{
-    console.log(req.query)
+    // console.log(req.query)
         if(!req.query.address){
         return res.send({
             error:'please fill the address'
@@ -42,7 +42,7 @@ app.get('/weather',(req,res)=>{
                if(error){
                    return res.send({error})
                }
-            //    console.log(forecastdata,data.location)
+              console.log(forecastdata)
                res.send({
                 forecast:forecastdata,
                 location:data.location,
