@@ -22,7 +22,7 @@ hbs.registerPartials(partialpath)
 app.get('', (req, res) => {
     res.render('index',{
         title:'Weather ',
-        name:'Andrew'
+        name:'Vivek'
     })
 })
 
@@ -71,7 +71,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help',{
         title:'Help',
-        name:'Rohan babu' 
+        name:'Vivek kalia' 
        
     })
 })
